@@ -1,0 +1,12 @@
+.section-top-shop-article {
+    @media screen and (max-width: 560px) {
+        .select2-container .select2-selection--single {
+            padding-left: 25px;
+        }
+    }
+    @media screen and (max-width: 460px) {
+        .form.form-shop.woocommerce-ordering {
+            margin-right: auto;
+        }
+    }
+}

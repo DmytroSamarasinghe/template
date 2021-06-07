@@ -1,0 +1,107 @@
+.words-author {
+    position: relative;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    &__contant {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+        z-index: 1;
+        margin-left: auto;
+        margin-bottom: 100px;
+    }
+    &__contant-text {
+        font-size: 42px;
+        line-height: 58px;
+    }
+    &__contant-small-text {
+        margin-right: auto;
+        font-size: 15px;
+        color: #222;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-top: 20px;
+        margin-top: 20px;
+        position: relative;
+        width: 250px;
+        text-align: right;
+        &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: #333;
+            left: 0;
+            top: 0;
+        }
+    }
+    &__img {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        .small-images {
+            position: absolute;
+            width: 101px;
+            height: 100px;
+            top: -54px;
+        }
+        .images {
+            margin-left: 48px;
+            width: 100%;
+            height: auto;
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        min-height: 58.3333vw;
+        &__contant-text {
+            font-size: 3.0833vw;
+            line-height: 3.7500vw;
+        }
+        &__img {
+            .images {
+                width: 54.8333vw;
+            }
+        }
+    }
+    @media screen and (max-width: 768px) { 
+        min-height: auto;
+        flex-direction: column;
+        padding-top: 11.1111vw;
+        &__contant { 
+            margin-bottom: 1vw;
+            margin-left: 0;
+            margin-top: 6vw;
+            order: 1;
+        }
+        &__contant-text {
+            font-size: 4.6667vw;
+            line-height: 7.1111vw;
+        }
+        &__contant-small-text { 
+            font-size: 3.1667vw;
+            padding-top: 3.5556vw;
+            margin-top: 1.5556vw;
+            width: 75.4444vw;
+            &:after {  
+                // height: 0.8333vw; 
+            }
+        }
+        &__img {
+            position: relative; 
+            top: initial;
+            transform: initial;
+            .small-images { 
+                width: 19.0556vw;
+                height: 19.7778vw;
+                top: -11vw;
+                left: -3vw;
+            }
+            .images {
+                margin-left: 6vw;
+            }
+        }
+        
+    }
+}

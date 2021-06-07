@@ -1,0 +1,12 @@
+.l-s-3 {
+    letter-spacing: 3px;
+}
+.l-s-5 {
+    letter-spacing: 5px;
+}
+
+@media screen and (max-width: 768px){
+    .l-s-3, .l-s-5 {
+        letter-spacing: 1px;
+    }
+}

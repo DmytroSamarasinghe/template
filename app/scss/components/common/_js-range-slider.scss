@@ -1,0 +1,32 @@
+.js-range-slider { 
+    &_input {
+        width: fit-content;
+        border: 0;
+        background: transparent;
+        padding: 0 5px;
+        &-wrrap{
+            display: flex;
+        }
+        &_from {
+        }
+        &_to {
+        }
+    }
+}
+.irs-from, .irs-single, .irs-to,
+.irs--round .irs-max, .irs--round .irs-min{
+    display: none;
+}
+.irs--round .irs-handle{ 
+    top: 31px;
+    width: 15px;
+    height: 15px;
+    border: 4px solid #eb7025;
+    background-color: #eb7025;
+}
+.irs--round .irs-bar{
+    background-color: #eb7025;
+}
+.irs--round .irs-handle.state_hover, .irs--round .irs-handle:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,27 @@
+.section-pagination {
+    @media screen and (max-width: 1200px) {
+        .elment-item__wrrap-inner {
+            flex-direction: column-reverse;
+        }
+    }
+    .wrrap-element {
+        width: 30% !important;
+        &:nth-child(odd) {
+            width: 70% !important;
+        }
+        @media screen and (max-width: 1200px) {
+            width: 100% !important;
+            &:nth-child(odd) {
+                width: 100% !important;
+            }
+        }
+    }
+    .woocommerce-result-count {
+        margin-right: auto;
+    }
+    @media screen and (max-width: 485px) {
+        .woocommerce-result-count {
+            margin: 0 auto;
+        }
+    }
+}

@@ -1,0 +1,116 @@
+// pagination
+.pagination {
+    // margin-top: 38px;
+    // margin-bottom: 39px;
+    font-size: 12px;
+    padding: 2em 0 3em;
+    @media screen and (max-width: 485px) {
+        margin: 0 auto;
+    }
+}
+
+.pagination__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    li {
+        margin-top: 10px;
+        // position: relative;
+        a,
+        span {
+            display: block;
+            background-color: #fff;
+            line-height: 36px;
+            width: 36px;
+            height: 36px;
+            text-align: center;
+            border: 1px solid #dadcdd;
+        }
+        a {
+            transition: all, .5s;
+            color: #666;
+            // &.active {
+            //     color: #333;
+            // }
+            &:hover {
+                border: 1px solid #eb7025;
+                box-shadow: 0 0 0 1px #eb7025 inset;
+                color: #334;
+            }
+        }
+        span {
+            border: 1px solid #eb7025;
+            box-shadow: 0 0 0 1px #eb7025 inset;
+        }
+        @media screen and (max-width: 768px) {
+            // min-width: 70px;
+            // padding: 0 10px;
+        }
+    }
+    li+li {
+        margin-left: 4px;
+    }
+    .prev,
+    .next {
+        background-color: #f7f7f7;
+        border: 1px solid #f7f7f7;
+        color: #000;
+        text-indent: unset;
+        width: auto;
+        min-width: 100px;
+        padding: 0 20px;
+        // display: none;
+        text-transform: uppercase;
+        font-weight: 600;
+        // &.active {
+        //     display: block;
+        // }
+    }
+    .pagination-dots {
+        // border: transparent;
+    }
+    @media screen and (max-width: 1023px) {
+        .prev,
+        .next {
+            min-width: 50px;
+            padding: 0 5px;
+        }
+        li a,
+        li span {
+            width: 30px;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .prev,
+        .next {
+            min-width: 70px;
+            padding: 0 5px;
+        }
+        li a,
+        li span {
+            width: 40px;
+        }
+    }
+    @media screen and (max-width: 485px) {
+        padding-bottom: 50px;
+        .prev,
+        .next {
+            position: absolute;
+            bottom: 0;
+        }
+        .prev {
+            left: 0;
+        }
+        .next {
+            right: 0;
+        }
+    }
+    @media screen and (max-width: 359px) {
+        li a,
+        li span {
+            width: 35px;
+        }
+    }
+}

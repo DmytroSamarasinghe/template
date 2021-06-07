@@ -1,0 +1,100 @@
+.animation-grow {
+    &:hover {
+        transform: scale(1.1);
+    }
+    &__hover-img {
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.animation-hover-shadow {
+    &.btn-shadow {
+        box-shadow: none;
+    }
+    &:hover {
+        color: #777;
+        box-shadow: 0 -6px 0 0 #f9d4bd inset;
+    }
+}
+
+.animation-spin {
+    animation-name: animation-spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.animation-uplifting {
+    &.bg-section {
+        .contant-center__wrrap-bg {
+            img {
+                -webkit-transform: scale(1.2) translateY(8%);
+                -ms-transform: scale(1.2) translateY(8%);
+                transform: scale(1.2) translateY(8%);
+                transition-duration: 1500ms;
+            }
+        }
+        &:hover {
+            .contant-center__wrrap-bg {
+                img {
+                    -webkit-transform: scale(1.2) translateY(-8%);
+                    -ms-transform: scale(1.2) translateY(-8%);
+                    transform: scale(1.2) translateY(-8%);
+                }
+            }
+        }
+    }
+}
+
+.animation-box-shadow {
+    transition: all, 0.5s;
+    &:hover {
+        box-shadow: 0 0 40px 15px #0000003c;
+    }
+    &-small {
+        transition: all, 0.5s;
+        &:hover {
+            box-shadow: 7px 7px 30px 0.3px #0000001a;
+        }
+    }
+}
+
+@keyframes animation-MoveUp {
+    from {
+        -webkit-transform: translateY(-50px);
+        -ms-transform: translateY(-50px);
+        transform: translateY(-50px);
+        opacity: 0
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+.animation-MoveUp {
+    animation-name: animation-MoveUp;
+}
+.animate_visible{
+    position: relative;
+}
+.animate_invisible{
+    visibility: hidden;
+}
+.animated-fast {
+    animation-duration: 0.5s;
+}
+
+.animated-slow {
+    animation-duration: 1.5s;
+}
+
+.animated {
+    animation-duration: 1s;
+}  

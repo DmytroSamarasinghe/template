@@ -1,0 +1,10 @@
+.underline{
+    &-text{
+        border-bottom: 2px solid #f9d4bd;
+        padding-bottom: 2px;
+        transition: all, 0.5s;
+        &:hover{ 
+            border-bottom: 2px solid #eb7025;
+        } 
+    }
+}

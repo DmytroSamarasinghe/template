@@ -1,0 +1,157 @@
+.woosw-list {
+    .woosw-content-items {
+        border-collapse: collapse;
+        width: 100%;
+        td:first-child {
+            padding-left: 20px;
+        }
+        td {
+            display: table-cell;
+            padding: 12px 5px;
+            color: #7d8794;
+        }
+        tr {
+            background-color: rgba(245, 246, 250, .7);
+        }
+        tbody>tr:nth-child(2n+1) {
+            background-color: #e8eaed;
+        }
+        .woosw-content-item {
+            transition: all, 0.5s;
+            &:hover {
+                background-color: rgba(0, 0, 0, .05);
+            }
+            &--remove {
+                span {
+                    color: #000;
+                    font-size: 25px;
+                    cursor: pointer;
+                    transition: all, 0.5s;
+                    &:hover {
+                        color: #eb7025;
+                    }
+                }
+            }
+            &--image {
+                width: 90px;
+                img {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+            &--title {
+                a {
+                    font-weight: 700;
+                    &:hover {
+                        color: #c95813;
+                    }
+                }
+            }
+            .woosw-content-item--add {
+                a {
+                    margin-top: 10px;
+                    display: block;
+                    width: fit-content;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .woosw-content-item--add p>del,
+            .woosw-content-item--add p>ins,
+            .woosw-content-item--add p>span {
+                display: none;
+            }
+        }
+    }
+    input {
+        transition: all, 0.5s;
+        &:focus {
+            outline: none;
+        }
+    }
+    input[type="url"] {
+        border-color: #f6f6f6;
+        border-style: solid;
+        display: block;
+        width: 100%;
+        border-width: 1px;
+        padding: .8rem 1.25rem;
+        background-color: #f6f6f6;
+        border-radius: 0;
+        min-height: 52px;
+    }
+    input[type="button"] {
+        display: inline-block;
+        font-weight: 600;
+        text-align: center;
+        text-transform: capitalize;
+        vertical-align: middle;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: .8rem 1.25rem;
+        border-radius: 0;
+        transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        background-color: #eb7025;
+        border-color: #eb7025;
+        color: #fff;
+        min-height: 52px;
+        cursor: pointer;
+        &:hover {
+            background-color: #000;
+            border-color: #000;
+        }
+    }
+    .woosw-content-item {}
+    .woosw-content-item-1192 {}
+    .woosw-content-item--image {}
+    .attachment-woocommerce_thumbnail {}
+    .size-woocommerce_thumbnail {}
+    .woosw-content-item--title {}
+    .woosw-content-item--price {}
+    .woocommerce-Price-amount {}
+    .amount {}
+    .woocommerce-Price-currencySymbol {}
+    .woosw-content-item--time {}
+    .woosw-content-item--stock {}
+    .woosw-content-item--add {}
+    .product {}
+    .woocommerce {}
+    .add_to_cart_inline {}
+    .button {}
+    .product_type_simple {}
+    .add_to_cart_button {}
+    .ajax_add_to_cart {}
+    .woosw-actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        .woosw-share {
+            margin-right: 20px;
+            a {
+                display: inline-block;
+                margin-left: 10px;
+                &:hover {
+                    color: #eb7025;
+                    ;
+                }
+            }
+        }
+    }
+    .woosw-share-label {}
+    .woosw-share-facebook {}
+    .woosw-share-twitter {}
+    .woosw-share-pinterest {}
+    .woosw-share-mail {}
+    .woosw-copy {
+        display: flex;
+        align-items: center;
+    }
+    .woosw-copy-label {
+        margin-right: 10px;
+    }
+    .woosw-copy-url {}
+    .woosw-copy-btn {}
+}

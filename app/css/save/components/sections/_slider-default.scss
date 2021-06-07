@@ -1,0 +1,161 @@
+.slider-default {
+    >.container {
+        position: relative;
+    }
+    .list-block {
+        position: absolute;
+        right: -1.7188vw;
+        top: 48%;
+        transform: rotate(270deg) translate(0, -50%);
+        font-size: 1.2500vw;
+        font-weight: 700;
+        line-height: 1;
+        box-shadow: 0 -0.5208vw 0 0 #eb70254d inset;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    .slider-wrrap {
+        .slick-arrow {
+            width: 3.5417vw;
+            height: 3.5417vw;
+            background-color: #fff;
+            font-size: 0;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            &:after {
+                content: "";
+                position: relative;
+                border: solid black;
+                border-width: 0 0.1042vw 0.1042vw 0;
+                display: inline-block;
+                padding: 0.3646vw;
+            }
+            &.slick-prev {
+                right: 0; 
+                &:after {
+                    transform: rotate(-45deg);
+                }
+            }
+            &.slick-next {
+                right: 3.6458vw; 
+                &:after {
+                    transform: rotate(135deg);
+                }
+            }
+            @media screen and (max-width: 768px) {
+                display: none !important;
+            }
+        }
+    }
+    .slider-contant {
+        position: relative;
+    }
+    .slider-info {
+        max-width: 39.0625vw;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 33.8542vw;
+        @media screen and (min-width: 769px) {
+            html[dir="rtl"] & {
+                align-items: flex-start;
+                margin-right: auto;
+                padding-left: 8.5938vw;
+            }
+            html[dir="ltr"] & {
+                align-items: flex-end;
+                margin-left: auto;
+                padding-right: 8.5938vw;
+            } 
+        }
+        @media screen and (max-width: 768px) {
+            align-items: center;
+            justify-content: flex-end;
+            max-width: 100%;
+            height: 152.7778vw; 
+            padding-bottom: 9.7222vw;
+        }
+    }
+    .section-caption {
+        text-align: right;
+        margin: 0;
+        margin-bottom: 1.5625vw;
+        @media screen and (max-width: 768px) {
+            text-align: center;
+            padding-left: 0;
+        }
+    }
+    .sc-subtitle {
+        font-size: 16px;
+        @media screen and (max-width: 768px) {
+            font-size: 3.8889vw;
+        }
+    }
+    .sc-title {
+        font-size: 2.8646vw;
+        line-height: 1.1;
+        max-width: 79.8438vw;
+        margin-left: auto;
+        margin-top: 3.1250vw;
+        margin-bottom: 1.5625vw;
+        @media screen and (max-width: 768px) {
+            font-size: 6.9444vw;
+        }
+    }
+    .sc-text {
+        font-size: 24px;
+        span {
+            font-size: 16px;
+            @media screen and (max-width: 768px) {
+                font-size: 3.8889vw;
+            }
+        }
+    }
+    .bg-picture {
+        z-index: -1;
+    }
+    //slider-btn-center
+    &.slider-btn-center {
+        .slider-wrrap {
+            .slick-arrow {
+                &.slick-next {
+                    left: 0;
+                    right: initial;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                }
+                &.slick-prev {
+                    right: 0;
+                    left: initial;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                }
+            }
+        }
+    }
+    &.slider-version-2 {
+        @media screen and (min-width: 769px) {
+            .slider-info {
+                max-width: 37.5521vw;
+            }
+            .sc-title {
+                margin-top: 0.5729vw;
+                margin-bottom: 0.5208vw;
+            }
+            .section-caption {
+                margin-bottom: 0;
+                min-height: 11.2813vw;
+                margin-bottom: 1.8229vw;
+            }
+            .sc-text {
+                margin-top: 1.9271vw;
+            }
+        }
+    }
+}

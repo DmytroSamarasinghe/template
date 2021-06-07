@@ -1,0 +1,29 @@
+#get-started-modal-filter {
+    overflow: hidden;
+    .modal-dialog {
+        max-width: 350px;
+        margin: 0;
+    }
+    .modal-content {
+        padding: 20px;
+        padding-top: 50px;
+        height: 100vh;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+            width: 4px;
+        }
+        &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #eb7025;
+            outline: 1px solid #eb7025;
+        }
+    }
+    @media screen and (max-width: 460px) {
+        .modal-dialog {
+            max-width: 460px;
+            width: 100%;
+        }
+    }
+}

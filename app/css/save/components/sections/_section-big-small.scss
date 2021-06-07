@@ -1,0 +1,7 @@
+.section-big-small {
+    @media screen and (max-width: 768px) {
+        .section-default__row {
+            flex-wrap: wrap;
+        }
+    }
+}

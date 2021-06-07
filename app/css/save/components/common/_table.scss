@@ -1,0 +1,24 @@
+.table {
+    width: 100%;
+    &.two-td{
+        .td,.th{
+            width: 50%;
+        }
+    }
+    .tr:nth-child(2n+1){
+        background-color: #e8eaed;
+    }
+    .tr{ 
+        background-color: #f5f6fa;
+    }
+}
+.tr {
+    display: flex; 
+    color: #7d8794;
+    padding: 10px 20px;
+}
+.th{
+
+}
+.td {
+}

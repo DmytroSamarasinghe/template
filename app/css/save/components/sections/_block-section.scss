@@ -1,0 +1,43 @@
+.block-section {
+    margin: 36px 0;
+    .block-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        max-width: 521px;
+        margin: 0 auto;
+        padding: 25px;
+        @media screen and (max-width: 768px) {
+            padding: 0;
+        }
+    }
+    .section-caption {
+        text-align: start;
+        .sc-title {
+            width: 100%;
+        }
+    }
+    .block-img {
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .section-default__row {
+        flex-direction: row-reverse;
+        @media screen and (max-width: 768px) {
+            flex-direction: column-reverse;
+        }
+    }
+    &-reverse {
+        .section-default__row {
+            flex-direction: row;
+            @media screen and (max-width: 768px) {
+                flex-direction: column-reverse;
+            }
+        }
+    }
+}

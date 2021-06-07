@@ -1,0 +1,16 @@
+
+                                <svg viewBox="0 0 614 507" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="block-product-svg">
+                                    <path d="M899 151.5c0 224.069-181.704 405.713-405.847 405.713C269.01 557.213.6 375.569.6 151.5c0-224.069 268.41-405.713 492.553-405.713C717.296-254.213 899-72.569 899 151.5z" fill="#E7E7E7"/>
+                                    <mask id="a" mask-type="alpha" maskUnits="userSpaceOnUse" x="9" y="-247" width="881" height="797">
+                                        <path d="M889.791 151.5c0 219.548-177.979 397.527-397.527 397.527-219.548 0-482.455-177.979-482.455-397.527 0-219.548 262.907-397.527 482.455-397.527S889.791-68.048 889.791 151.5z" fill="#C4C4C4"/>
+                                    </mask>
+                                    <g mask="url(#a)">
+                                        <path fill="url(#pattern0)" d="M-357.533-229.655h1450.95v965.934h-1450.95z"/>
+                                    </g>
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0" transform="matrix(.00063 0 0 .00094 0 0)"/>
+                                        </pattern>
+                                        <image id="image0"  xlink:href="images/content-images/product-item.jpg"/>
+                                    </defs>
+                                </svg>

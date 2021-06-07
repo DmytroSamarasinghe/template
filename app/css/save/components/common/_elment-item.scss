@@ -1,0 +1,94 @@
+.elment-item {
+    &__wrrap-inner.elment-item__small {
+        margin-left: -0.5208vw;
+        margin-right: -0.5208vw;
+        .elment-item__wrrap-item {
+            padding: 0 0.5208vw 0;
+        }
+    }
+    &__big-spacing {
+        .elment-item__wrrap-item {
+            margin-bottom: 80px;
+        }
+    }
+    &__wrrap {
+        width: 100%;
+        &-left {
+            padding: 2.0833vw 1.0417vw 0 1.0417vw;
+        }
+        &-right {
+            padding: 2.0833vw 1.0417vw 0 1.0417vw;
+        }
+        &-left,
+        &-right {}
+        &-inner {
+            margin: 1.5625vw -1.0417vw;
+            &.no-padding {
+                margin: 4.3478vw 0;
+                margin-right: -1.0417vw;
+                margin-left: -1.0417vw;
+                padding-left: 1.0417vw;
+                padding-right: 1.0417vw;
+                .elment-item__wrrap-item {
+                    padding: 0;
+                    padding-bottom: 0;
+                    border: 1px solid #ddd;
+                    margin-top: -1px;
+                    margin-left: -1px;
+                    margin-bottom: 0;
+                    height: calc(100% + 1px);
+                    background-color: #f5f5f5;
+                }
+            } 
+        }
+        &-item {
+            padding: 0 1.0417vw 0;
+            // margin: 1.5625vw 0;
+            margin-bottom: 1.5625vw;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        &__wrrap {
+            &-left {}
+            &-right {}
+            &-left,
+            &-right {
+                padding: 0;
+            }
+            &-inner {
+                margin: 4.3478vw -2.1739vw;
+                // margin-left: -2.1739vw;
+                // margin-right: -2.1739vw;
+            }
+            &-item {
+                margin-top: 4.3478vw;
+                margin-bottom: 0;
+                padding: 0 2.1739vw;
+            }
+            &+.elment-item__wrrap {
+                margin: 4.3478vw 0 0; 
+            }
+        }
+        &__big-spacing {
+            .elment-item__wrrap-item {
+                margin-bottom: 0;
+            }
+        }
+    }
+    @media screen and (max-width: 460px) {
+        &-inner {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        &-item {
+            margin-top: 5.5556vw;
+            margin-bottom: 0;
+            padding: 0;
+        }
+    }
+    @media screen and (min-width: 1921px) {
+        &__wrrap-inner {
+            margin: 30px -1.0417vw;
+        }
+    }
+}

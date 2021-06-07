@@ -1,0 +1,99 @@
+.form {
+    &-box {
+        display: flex;
+    }
+    .btn-form {
+        padding: 10px;
+        width: 165px;
+    }
+    .input-search {
+        width: 385px;
+        padding: 11px 17px;
+        border: 0;
+        &:focus {
+            outline: none;
+            border: 1px solid orange;
+        }
+    }
+    input,
+    textarea {
+        &:focus {
+            outline: none;
+        }
+    }
+    textarea,
+    input {
+        transition: all ease 0.3s;
+        font-size: 1rem;
+        border-color: #f6f6f6;
+        border-style: solid;
+        display: block;
+        width: 100%;
+        border-width: 1px;
+        padding: 0.8rem 1.25rem;
+        background-color: #f6f6f6;
+        border-radius: 0;
+        width: 100%;
+    }
+    .input-underline {
+        font-size: 16px;
+        font-weight: 400;
+        background-color: rgba(0, 0, 0, 0);
+        border-style: solid;
+        border-width: 0 0 1px 0;
+        border-color: #222;
+        padding: 5px 0 5px 0;
+        margin: 10px 0 30px 0;
+        width: 100%;
+        @media screen and (max-width: 768px) {
+            margin: 10px 0 20px 0;
+        }
+    }
+    .info-checkbox {
+        span {
+            color: #333;
+        }
+    }
+    .btn-form {
+        // margin: 15px 0;
+    }
+    &-select__box {
+        position: relative;
+    }
+}
+
+.filter-toggle {
+    font-size: 16px;
+    line-height: 1;
+    &:hover .filter-icon {
+        transform: rotate( 90deg);
+    }
+    .filter-icon {
+        width: 12px;
+        border: 1px solid #313131;
+        margin-bottom: 4px;
+        margin-right: 15px;
+        position: relative;
+        display: inline-block;
+        transition: all 0.3s;
+        &:before {
+            left: -1px;
+            top: -1px;
+            content: '';
+            position: absolute;
+            width: 12px;
+            border: 1px solid #313131;
+            transform: rotate( 90deg);
+            transition: all ease 0.3s;
+        }
+    }
+}
+
+
+.form-block{
+    display: grid;
+    grid-gap:30px;
+    .form-row{
+
+    }
+}

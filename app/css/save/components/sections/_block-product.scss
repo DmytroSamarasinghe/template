@@ -1,0 +1,56 @@
+.block-product {
+    display: flex; 
+    min-height: 26.4063vw;
+    background: #fff;
+    html[dir="rtl"] &{
+        flex-direction: row-reverse;
+    }
+    .block-product-svg {
+        width: 31.9792vw;
+        height: 26.4063vw;
+        margin-left: auto;
+        @media screen and (max-width: 768px){  
+            width: 75.9792vw;
+            height: 55.4063vw;
+        }
+    }
+    .block-product-info {
+        display: flex;
+        flex-direction: column;
+        max-width: 224px;
+        width: 100%;
+        margin-right: 15px;
+    }
+    .section-caption {
+        margin-top: auto;
+        margin-bottom: 36px; 
+        &:hover {
+            .sc-title {
+                text-decoration: underline;
+            }
+            .btn-link.btn-shadow {  
+                color: $orange;
+                box-shadow: none;
+            }
+        }
+    }
+    .sc-title {
+        @include fz-30;
+        line-height: 1;
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding-bottom: 0;
+    }
+    .sc-subtitle {
+        @include fz-14;
+    }
+    a.btn {
+        @include fz-16;
+    }
+    .btn-link.btn-shadow {
+        margin-top: 16px; 
+    }
+    .sc-title, .btn-link.btn-shadow {
+        transition: all, 0.5s;
+    }
+}

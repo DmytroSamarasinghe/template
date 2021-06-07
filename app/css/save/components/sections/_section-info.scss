@@ -1,0 +1,110 @@
+.section-info {
+    &__inner {
+        .m-b-tite-small {
+            h2 {
+                margin-bottom: 10px;
+            }
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1;
+            margin-bottom: 30px;
+            margin-top: 50px;
+        }
+        @media screen and (max-width: 768px) {
+            h2:first-child {
+                margin-top: 0px;
+            }
+            margin-top: 30px;
+        }
+        p {
+            +p {
+                margin-top: 20px 0 50px;
+            }
+        }
+    }
+    &__item {
+        color: #222;
+        font-size: 15px;
+        line-height: 28px;
+    }
+    .table-wrap {
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    table {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #e5e5e5;
+        border-collapse: collapse;
+        margin: 0;
+        width: 100%;
+        margin: 15px 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        display: block;
+        border: 0;
+        thead {
+            tr {
+                background-color: #f5f5f5;
+            }
+            th {
+                text-align: left;
+                // &:nth-child(even) {
+                //     span {
+                //         color: #eb7025;
+                //     }
+                // }
+            }
+        }
+        tr {}
+        th {
+            @media screen and (max-width: 768px) {
+                font-size: 12px;
+            }
+        }
+        th,
+        td {
+            border: 1px solid #e9ecef;
+            padding: 15px;
+            color: #000;
+            font-size: 14px;
+            line-height: 1.5;
+            font-weight: 600;
+            padding: 10px 30px;
+            // display: block;
+            min-width: 150px;
+            @media screen and (max-width: 1024px) {
+                padding: 10px;
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 12px;
+            }
+        }
+        // td {
+        //     color: #000;
+        //     font-size: 14px;
+        //     line-height: 1.5;
+        //     font-weight: 600;
+        //     padding: 10px 30px;
+        //     // display: block;
+        //     min-width: 150px;
+        //     @media screen and (max-width: 1024px) {
+        //         padding: 10px;
+        //     }
+        //     @media screen and (max-width: 768px) {
+        //         font-size: 12px;
+        //     }
+        // }
+        &-inner {}
+        tbody {
+            tr {
+                background-color: #f5f5f5;
+            }
+            tr:nth-child(odd) {
+                background-color: #fff;
+            }
+        }
+    }
+}

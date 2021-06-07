@@ -1,0 +1,27 @@
+.box-section {
+    margin: 100px 0 140px !important;
+    .box-section__contant {
+        position: relative;
+        max-width: 690px;
+        width: 100%;
+        padding: 10px 79px;
+        margin: 0 auto;
+        min-height: 174px;
+        display: flex;
+        align-items: center;
+        p {
+            position: relative;
+            z-index: 3;
+            max-width: 281px;
+            @include fz-16;
+            font-weight: 500;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        margin: 30px 0 !important;
+        .box-section__contant {
+            padding: 10px;
+            justify-content: center;
+        }
+    }
+}
