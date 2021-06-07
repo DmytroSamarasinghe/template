@@ -1,0 +1,53 @@
+{
+  "name": "start_gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dmytro",
+  "license": "ISC",
+  "devDependencies": {
+    "@tporl/postcss-px-to-viewport": "^0.1.0",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-tinypng-compress": "^1.2.5",
+    "gulp-uglify": "^3.0.2",
+    "jquery-form-styler": "^2.0.2",
+    "magnific-popup": "^1.1.0",
+    "normalize.css": "^8.0.1",
+    "rateyo": "^2.3.2",
+    "slick-carousel": "^1.8.1",
+    "svg4everybody": "^2.1.9",
+    "swiper": "^6.0.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "air-datepicker": "^2.2.3",
+    "animate.css": "^4.1.0",
+    "clockpicker": "0.0.7",
+    "fancybox": "^3.0.1",
+    "ion-rangeslider": "^2.3.1",
+    "jquery": "^3.5.1",
+    "jquery-datetimepicker": "^2.5.17",
+    "jquery-steps": "^1.1.0",
+    "jquery-ui": "^1.12.1",
+    "jquery-validation": "^1.19.2",
+    "jquery.cookie": "^1.4.1",
+    "jquery.steps": "^1.1.1",
+    "jquery.upload.preview.psk": "^1.0.0",
+    "lazysizes": "^5.3.0",
+    "select2": "^4.1.0-rc.0",
+    "slick-slider": "^1.8.2",
+    "wowjs": "^1.1.3"
+  }
+}
